@@ -1,4 +1,5 @@
 # Geometry
+[![Build Status](https://travis-ci.org/drakin/Geometry.svg?branch=master)](https://travis-ci.org/drakin/Geometry) [![Coverage Status](https://coveralls.io/repos/drakin/Geometry/badge.svg)](https://coveralls.io/r/drakin/Geometry)
 Данный проект - реализация геометрических примитивов.
 
 Суть заключается в том, что для разработки была попытка использовать подход Бека разработка через тестирование.
