@@ -5,9 +5,8 @@ jdk:
 
 env:
   global:
-    secure: "F+q7lJ5tkdywrXPr2T4x5zGsCOuo+uwpkWcxMybGQGh8T70mfv2fX6hm3MUnvb3+lkkM4wcsM/KFkj12pIPCEY6+8XD/I9W0Xz8XQSQ/iLTvrFMYqr5EMfo5+aH0yyknMqBzchnzTaiQHcKyAGt7GRqWAS97f0yTgA2c2n1E6IU="
     secure: "Vxax7WFW0IGdMMcSAwQKiE+4rHxih5AyD2DiWbICODDeRdm21AehRs475qcN8Jvj3TJgxt3K2kHai7u4I+FZ71J+utn17C8mk/SQ8xcIkcF2Zyif0uMzJnicoEtnprYQg1E5VHbFvHjrMZB6DfUnfCXQckrOKjEM+Lg8i9BDsWo="
 install: mvn clean test
 
 after_success:
-  - mvn clean test jacoco:report coveralls:report
+  - mvn clean test cobertura:cobertura coveralls:report
