@@ -3,4 +3,11 @@ language: java
 jdk:
     - oraclejdk7
 
+env:
+  global:
+    secure: "F+q7lJ5tkdywrXPr2T4x5zGsCOuo+uwpkWcxMybGQGh8T70mfv2fX6hm3MUnvb3+lkkM4wcsM/KFkj12pIPCEY6+8XD/I9W0Xz8XQSQ/iLTvrFMYqr5EMfo5+aH0yyknMqBzchnzTaiQHcKyAGt7GRqWAS97f0yTgA2c2n1E6IU="
+
 install: mvn clean test
+
+after_success:
+  - mvn jacoco:report coveralls:jacoco
